@@ -105,15 +105,15 @@
 12. Nested namespace definition
 
 ## Умные указатели (1 пара)
-1. `unique_ptr`
+1. `unique_ptr`, `make_unique_default_init`
 2. `shared_ptr`
     * custom deleter
     * shared_ptr на члены-класса
     * внутреннее устройство `shared_ptr`
-    * `std::make_shared`
+    * `make_shared`, `make_shared_default_init`
     * `weak_ptr`
     * замечание о том, что `weak_ptr::expired` racy и надо использовать `weak_ptr::lock`
-    * pitfall: private inheritance from `std::enable_shared_for_this`
+    * pitfall: private inheritance from `enable_shared_for_this`
     * *_pointer_cast
 3. pimpl используя `unique_ptr` и `shared_ptr`
 
