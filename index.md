@@ -146,6 +146,7 @@
    * `if constexpr`
    * fold expressions
 10. Явное инстанцирование темплейтов и подавление инстанцирования
+11. Примеры -- конструктор variant-а, deduction guide std::function-а.
 
 ## Расширения стандартной библиотеки (2 пары)
 * emplace и move semantics везде, даже в std::pair
