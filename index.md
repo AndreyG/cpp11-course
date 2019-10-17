@@ -1,4 +1,4 @@
-## Rvalue-references (2 пары)
+## Rvalue-references (1 пара)
 1. Копирование объектов при возврате из функции
 2. Return value optimization (RVO)
 3. Named return value optimization (NRVO)
@@ -17,7 +17,7 @@
     * xvalue/prvalue, продление времени жизни при бинде к rvalue-ссылке
 11. сравнение с destructive move
 
-## Perfect-forwarding (2 пары)
+## Perfect-forwarding (1 пара)
 1. Проблема perfect-fowarding
 2. Вывод параметров шаблона при использовании rvalue-ссылок
 3. Reference-collapsing rule
@@ -131,22 +131,22 @@
     * `vector<string> ss {{"aba", "caba"}}`
     * Нетривиальное взаимодействие с `auto`
 
-## Metaprogramming (2 пары)
+## Metaprogramming и Concepts (2 пары)
 1. Template type aliases
 2. Template variables
-3. Самый эффективный в смысле compilation time способ отсечься по SFINAE -- default template arguments, теперь и для function templates
-4. Static assertions
-5. Expression SFINAE
-6. Std type traits
-7. Constexpr functions
+3. Static assertions
+4. Expression SFINAE
+5. Std type traits
+6. Constexpr functions
    * Разница с точки зрения компилятора между вычислением constexpr functions и variables -- значения последних кэшируются
-8. Пример использования -- вычисление аргумента `noexcept`
-9. Бонусы
+7. Пример использования -- вычисление аргумента `noexcept`
+8. Бонусы
    * `std::void_t`
    * `if constexpr`
    * fold expressions
-10. Явное инстанцирование темплейтов и подавление инстанцирования
-11. Примеры -- конструктор variant-а, deduction guide std::function-а.
+9. Явное инстанцирование темплейтов и подавление инстанцирования
+10. Примеры -- конструктор variant-а, deduction guide std::function-а.
+11. Как концепты упрощают все выше-перечисленное.
 
 ## Расширения стандартной библиотеки (2 пары)
 * emplace и move semantics везде, даже в std::pair
@@ -189,4 +189,6 @@
     * Mutation-based fuzzing
     * Control-flow guided (coverage-based) fuzzing
     * aflfuzz
-    * LLVMFuzzer
+    * LLVMFuzzer    
+## Корутины (2 пары)
+## Модули (2 пары)
